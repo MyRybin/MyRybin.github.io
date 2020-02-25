@@ -1,0 +1,23 @@
+/* wrapper */
+.wrapper {
+	background:red;
+	display:block;
+}
+
+/* top */
+.top {
+	text-transform:uppercase;
+	text-align:center;
+	margin:15px 0 25px 0;
+}
+.top span {
+	letter-spacing: 5px;
+	color:#525868;
+	font-size:18px;
+}
+.top h1 {
+	letter-spacing: 7px;
+	font-size: 600%;
+	font-weight: 900;
+	color:#fff;
+}
