@@ -1,17 +1,3 @@
-@media (max-width: 320px) {
-	/* top */
-	.top {
-		margin:5px 0 15px 0;
-	}
-	.top span {
-		letter-spacing:3px;
-		font-size:14px;
-	}
-	.top h1 {
-		letter-spacing:3px;
-		font-size:150%;
-	}
-}
 @media (max-width: 360px) {
 	/* top */
 	.top {
@@ -24,5 +10,19 @@
 	.top h1 {
 		letter-spacing:3px;
 		font-size:180%;
+	}
+}
+@media (max-width: 320px) {
+	/* top */
+	.top {
+		margin:5px 0 15px 0;
+	}
+	.top span {
+		letter-spacing:3px;
+		font-size:14px;
+	}
+	.top h1 {
+		letter-spacing:3px;
+		font-size:150%;
 	}
 }
