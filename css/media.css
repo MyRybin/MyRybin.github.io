@@ -1,0 +1,168 @@
+@media (min-width: 1024px) {
+	/* top */
+	.top {
+		margin:10px 0 25px 0;
+	}
+	.top span {
+		letter-spacing:8px;
+		font-size:22px;
+	}
+	.top h1 {
+		letter-spacing:7px;
+		font-size:500%;
+	}
+	
+}
+@media (min-width: 1824px) {
+	/* top */
+	.top {
+		margin:10px 0 25px 0;
+	}
+	.top span {
+		letter-spacing:14px;
+		font-size:28px;
+	}
+	.top h1 {
+		letter-spacing:10px;
+		font-size:800%;
+	}
+	
+}
+@media (min-width: 768px) {
+	/* mobal */
+	.modal {
+		max-height: 100vh;
+		padding-top:250px;
+	}
+	.modal_container {
+		max-width:640px;
+		height: auto;
+		margin: 0 auto;
+		border-radius: 8px;
+		overflow-y: auto;
+		-webkit-box-shadow: 0 8px 40px rgba(0,0,0,.32);
+		box-shadow: 0 8px 40px rgba(0,0,0,.32);
+	}
+	.modal_header {
+		padding-left:25px;
+		padding-right:25px;
+	}
+	.modal_heading {
+		font-size:24px;
+	}
+	.modal_content {
+		padding-left:25px;
+		padding-right:25px;
+	}
+}
+@media (max-width: 768px) {
+	body.lock {
+		overflow:hidden;
+	}
+	.container {
+		margin:0;
+	}
+	
+	/* header */
+	.header {
+		position:fixed;
+		border:0px;
+	}
+	.header_body {
+		height:45px;
+	}
+	
+	/* top */
+	.top {
+		display:none;
+	}
+	
+	/* burger */
+	.header_burger {
+		display:block;
+		position:relative;
+		width:30px;
+		height:20px;
+		z-index:4;
+		margin-left:5px;
+	}
+	.header_burger span {
+		position:absolute;
+		background-color:#fff;
+		left:0;
+		width:100%;
+		height:2px;
+		top:9px;
+		transition:all 0.3s ease 0s;
+	}
+	.header_burger:before,
+	.header_burger:after {
+		content:'';
+		background-color:#fff;
+		position:absolute;
+		width:100%;
+		height:2px;
+		left:0;
+		transition:all 0.3s ease 0s;
+	}
+	.header_burger:before {
+		top:0;
+	}
+	.header_burger:after {
+		bottom:0;
+	}
+	.header_burger.active:before {
+		transform:rotate(45deg);
+		top:9px;
+	}
+	.header_burger.active:after {
+		transform:rotate(-45deg);
+		bottom:9px;
+	}
+	.header_burger.active span {
+		transform:scale(0);
+		
+	}
+	
+	/* menu */
+	.header_menu {
+		position:fixed;
+		top:-108%;
+		overflow:auto;
+		transition:all 0.2s ease 0s;
+		left:0;
+		width:100%;
+		height:100%;
+		background-color:#0e121e;
+		
+	}
+	.header_menu.active {
+		top:0;
+	}
+	.header_list {
+		display:block;
+		padding:70px 0px 0px 10px;
+	}
+	.header_list li {
+		margin:0px 0px 20px 0px;
+	}
+	.header_link {
+		padding:0px;
+	}
+	
+	/* logotype */
+	.header_logo {
+		flex: 0 0 40px;
+	}
+	
+	/* user panel */
+	.userpanel_avatar {
+		flex: 0 0 40px;
+	}
+	
+	/* content */
+	.content {
+		padding-top:60px;
+	}
+	
+}

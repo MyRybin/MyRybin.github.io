@@ -1,0 +1,9 @@
+$(document).ready(function(){
+	$('.header_burger').click(function(event){
+		$('.header_burger,.header_menu').toggleClass('active');
+		$('body').toggleClass('lock');
+	});
+	$('.login,.modal_close').click(function(event){
+		$('body').toggleClass('lock_windows');
+	});
+});
