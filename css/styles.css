@@ -135,7 +135,6 @@ body.lock_windows {
 /* login */
 .login {
 	flex: 0 0 48px;
-	border-radius:50%;
 	overflow:hidden;
 	margin-left:5px;
 	z-index:3;
