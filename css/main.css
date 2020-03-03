@@ -45,6 +45,9 @@ ol,ul {
 #icon-close-empty {
 	fill:red;
 }
+#icon-user {
+	fill:gray;
+}
 input {
     height: 32px;
     padding-left: 12px;
