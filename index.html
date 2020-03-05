@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<title>Counter strike</title>
+	<meta name="description" content="Counter strike">
+	<meta name="keywords" content="Counter, Strike">
+	<meta name="robots" content="index,follow">
+	<meta name="author" content="К.Рибін">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale-1">
+	<link rel="icon" type="image/png" href="favicon.png" sizes="16x16 32x32">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/promotion.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+	<script src="js/jquery-3.4.1.min.js" type="text/javascript"></script>
+	<script src="js/scripts.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		window.onload = function() {/*при запуску сторінки*/};		
+	</script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="top">
+			<span>servises</span>
+			<h1>counter strike</h1>
+		</div>
+		<div class="container">
+			<header class="header">
+				<div class="header_body">
+					<div class="header_burger">
+						<span></span>
+					</div>
+					<a href="#" class="header_logo">
+						<img src="logotype.jpg" alt="logo">
+					</a>
+					<nav class="header_menu">
+						<ul class="header_list">
+							<li>
+								<a href="#" class="header_link header_link_active">главная</a>
+							</li>
+							<li>
+								<a href="#" class="header_link">топ победителей</a>
+							</li>
+							<li>
+								<a href="https://myrybin.github.io/index-promotions.html" class="header_link">промо-акції</a>
+							</li>
+							<li>
+								<a href="#" class="header_link">о проекте</a>
+							</li>
+							<li>
+								<a href="#" class="header_link">faq</a>
+							</li>
+						</ul>
+					</nav>
+					<a href="#" class="login openlogin" title="Login" onclick="openLogin();" >
+						<svg class="header-topline__user-icon" height="47" width="48">
+							<use xlink:href="#icon-user" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<svg viewBox="0 0 15 14" id="icon-user">
+									<path d="M8 7C9.65685 7 11 5.65685 11 4C11 2.34315 9.65685 1 8 1C6.34315 1 5 2.34315 5 4C5 5.65685 6.34315 7 8 7Z"></path>
+									<path d="M8 8C4.68629 8 2 10.6863 2 14H14C14 10.6863 11.3137 8 8 8Z"></path>
+								</svg>
+							</use>
+						</svg>
+					</a>
+					<div class="userpanel">
+						<div class="userpanel_avatar">
+							<img src="img/avatars/admin.png" alt="avatar">
+						</div>
+						<div class="userpanel_data">
+							<p class="userpanel_title">kostya rybin</p>
+							<span class="userpanel_price">2356 руб</span>
+						</div>
+					</div>					
+					<a href="#" class="header_cart opencart" onclick="openCart();">
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							width="48px" height="32px" viewBox="0 0 40 36" style="enable-background:new 0 0 40 36;" xml:space="preserve">
+							<g id="Page-1_4_" sketch:type="MSPage">
+								<g id="Desktop_4_" transform="translate(-84.000000, -410.000000)" sketch:type="MSArtboardGroup">
+									<path id="cart" sketch:type="MSShapeGroup" class="st0" d="M94.5,434.6h24.8l4.7-15.7H92.2l-1.3-8.9H84v4.8h3.1l3.7,27.8h0.1
+										c0,1.9,1.8,3.4,3.9,3.4c2.2,0,3.9-1.5,3.9-3.4h12.8c0,1.9,1.8,3.4,3.9,3.4c2.2,0,3.9-1.5,3.9-3.4h1.7v-3.9l-25.8-0.1L94.5,434.6" />
+								</g>
+							</g>
+						</svg>
+						<span class="header_cart_kil">2</span>
+					</a>
+				</div>
+			</header>
+			<div id="show_modal" class="modal" style="display:none;" >
+				<div id="idmodal_background" class="modal_background modal_background_animation closelogin" onclick="closeLogin();"></div>
+				<div class="modal_container">
+					<div class="modal_header">
+						<h3 class="modal_heading">Вхід</h3>
+						<button onclick="closeLogin();" class="modal_close closelogin" title="Close">
+							<svg _ngcontent-c57="" height="16" pointer-events="none" width="16">
+								<use _ngcontent-c57="" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close-modal">
+									<svg viewBox="0 0 16 16" id="icon-close-modal">
+										<path class="st0" d="M9.4,8l6.3-6.3c0.4-0.4,0.4-1,0-1.4s-1-0.4-1.4,0L8,6.6L1.7,0.3c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4L6.6,8  l-6.3,6.3c-0.4,0.4-0.4,1,0,1.4C0.5,15.9,0.7,16,1,16s0.5-0.1,0.7-0.3L8,9.4l6.3,6.3c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3  c0.4-0.4,0.4-1,0-1.4L9.4,8z"></path>
+									</svg>
+								</use>
+							</svg>
+						</button>
+					</div>
+					<div class="modal_content">
+						<form class="modal_auth_form" action="#" method="post">
+							<div class="modal_auth_form_item">
+								<label class="modal_auth_form_label" for="auth_login"> Логін </label>
+								<input id="auth_login" type="text" name="name_login" class="modal_auth_form_input" placeholder="Логін"/>
+							</div>
+							<div class="modal_auth_form_item">
+								<label class="modal_auth_form_label" for="auth_password"> Пароль </label>
+								<input id="auth_password" type="password" class="modal_auth_form_input"  placeholder="Пароль"/>
+							</div>
+							<div class="modal_auth_form_item modal_auth_form_item_data">
+								<label class="modal_auth_form_label" for="auth_checkbox"> 
+									<input checked id="auth_checkbox" type="checkbox" class="modal_auth_form_checkbox" />Сохранить дані 
+								</label>
+								<a href="#" class="modal_auth_link">Забули пароль</a>
+							</div>
+							<div class="modal_auth_form_item modal_auth_form_item_submit">
+								<button type="submit" class="button modal_auth_button modal_auth_button_submit"> Увійти </button>
+								<a href="#" class="modal_register"> Зареєструватися </a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div id="show_modal_cart" class="modal" style="display:none;" >
+				<div id="idmodal_background_cart" class="modal_background modal_background_animation closecart" onclick="closeCart();"></div>
+				<div class="modal_container">
+					<div class="modal_header">
+						<h3 class="modal_heading">Корзина</h3>
+						<button onclick="closeCart();" class="modal_close closecart" title="Close">
+							<svg _ngcontent-c57="" height="16" pointer-events="none" width="16">
+								<use _ngcontent-c57="" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close-modal">
+									<svg viewBox="0 0 16 16" id="icon-close-modal">
+										<path class="st0" d="M9.4,8l6.3-6.3c0.4-0.4,0.4-1,0-1.4s-1-0.4-1.4,0L8,6.6L1.7,0.3c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4L6.6,8  l-6.3,6.3c-0.4,0.4-0.4,1,0,1.4C0.5,15.9,0.7,16,1,16s0.5-0.1,0.7-0.3L8,9.4l6.3,6.3c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3  c0.4-0.4,0.4-1,0-1.4L9.4,8z"></path>
+									</svg>
+								</use>
+							</svg>
+						</button>
+					</div>
+					<div class="modal_content">
+						<ul class="modal_content_cart_list">
+							<li class="modal_content_cart_item">
+								<div class="modal_content_cart_item_content">
+									<button class="modal_content_cart_item_remove" type="button">
+										<svg aria-hidden="true" pointer-events="none">
+											<use xlink:href="#icon-close-empty" xmlns:xlink="http://www.w3.org/1999/xlink" pointer-events="none">
+												<svg viewBox="0 0 24.99 24.99" id="icon-close-empty">
+													<path d="M18.15,6.84a1,1,0,0,0-1.41,0l-4.24,4.24L8.25,6.84A1,1,0,0,0,6.84,8.25l4.24,4.24L6.84,16.74a1,1,0,1,0,1.41,1.41l4.24-4.24,4.24,4.24a1,1,0,0,0,1.41-1.41l-4.24-4.24,4.24-4.24A1,1,0,0,0,18.15,6.84Z"></path>
+													<path d="M21.33,3.65a12.49,12.49,0,1,0,0,17.68A12.52,12.52,0,0,0,21.33,3.65Zm-.71,17a11.49,11.49,0,1,1,0-16.26A11.51,11.51,0,0,1,20.63,20.63Z"></path>
+												</svg>
+											</use>
+										</svg>
+									</button>
+									<a href="#" class="modal_content_cart_item_img" title="Img">
+										<img src="img/case/case-1.jpg" alt="case" />
+									</a>
+									<div class="modal_content_cart_content">
+										<a href="#" class="modal_content_cart_content_title" title="Армейськоє качество">Армейськоє качество</a>
+										<div class="modal_content_cart_flex">
+											<div class="modal_content_cart_price">
+												<span class="modal_content_cart_summa">215</span>
+												<span class="modal_content_cart_cur">P</span>
+												&nbsp;
+												<span class="modal_content_cart_pricemin_summa">285</span>
+												<span class="modal_content_cart_pricemin_cur">P</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="modal_content_cart_item">
+								<div class="modal_content_cart_item_content">
+									<button class="modal_content_cart_item_remove" type="button">
+										<svg aria-hidden="true" pointer-events="none">
+											<use xlink:href="#icon-close-empty" xmlns:xlink="http://www.w3.org/1999/xlink" pointer-events="none">
+												<svg viewBox="0 0 24.99 24.99" id="icon-close-empty">
+													<path d="M18.15,6.84a1,1,0,0,0-1.41,0l-4.24,4.24L8.25,6.84A1,1,0,0,0,6.84,8.25l4.24,4.24L6.84,16.74a1,1,0,1,0,1.41,1.41l4.24-4.24,4.24,4.24a1,1,0,0,0,1.41-1.41l-4.24-4.24,4.24-4.24A1,1,0,0,0,18.15,6.84Z"></path>
+													<path d="M21.33,3.65a12.49,12.49,0,1,0,0,17.68A12.52,12.52,0,0,0,21.33,3.65Zm-.71,17a11.49,11.49,0,1,1,0-16.26A11.51,11.51,0,0,1,20.63,20.63Z"></path>
+												</svg>
+											</use>
+										</svg>
+									</button>
+									<a href="#" class="modal_content_cart_item_img" title="Img">
+										<img src="img/case/case-2.jpg" alt="case" />
+									</a>
+									<div class="modal_content_cart_content">
+										<a href="#" class="modal_content_cart_content_title" title="Українське качество">Українське качество</a>
+										<div class="modal_content_cart_flex">
+											<div class="modal_content_cart_price">
+												<span class="modal_content_cart_summa">315</span>
+												<span class="modal_content_cart_cur">грн</span>
+												&nbsp;
+												<span class="modal_content_cart_pricemin_summa">485</span>
+												<span class="modal_content_cart_pricemin_cur">грн</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<div class="modal_content_cart_bottom">
+							<div class="modal_content_cart_bottom_content">
+								<div class="modal_content_cart_bottom_content_price">
+									<span class="modal_content_cart_bottom_content_label">Разом:</span>
+									<span>
+										<span class="modal_content_cart_bottom_content_summa">548</span>
+										<span class="modal_content_cart_bottom_content_cur">грн</span>
+									</span>
+								</div>
+								<button href="#" class="button modal_cart_button">Оформити замовлення</button>
+							</div>
+						</div>
+						<!--<div class="modal_content_cart">
+							<div class="modal_content_cart_column">
+								<img src="img/case/case-1.jpg" alt="case"/>
+								<div class="modal_content_cart_bottom">
+									<p class="modal_content_cart_title">Армейськоє качество</p>
+									<span class="modal_content_cart_price"> 215 p </span><span class="modal_content_cart_pricemin"> 318 p</span>
+								</div>
+							</div>
+						</div>-->
+						<div class="modal_content_cartnull" style="display:none;">
+							<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								width="58px" height="42px" viewBox="0 0 40 36" style="enable-background:new 0 0 40 36;" xml:space="preserve">
+								<g id="Page-1_4_" sketch:type="MSPage">
+									<g id="Desktop_4_" transform="translate(-84.000000, -410.000000)" sketch:type="MSArtboardGroup">
+										<path id="cart" sketch:type="MSShapeGroup" class="st0" d="M94.5,434.6h24.8l4.7-15.7H92.2l-1.3-8.9H84v4.8h3.1l3.7,27.8h0.1
+											c0,1.9,1.8,3.4,3.9,3.4c2.2,0,3.9-1.5,3.9-3.4h12.8c0,1.9,1.8,3.4,3.9,3.4c2.2,0,3.9-1.5,3.9-3.4h1.7v-3.9l-25.8-0.1L94.5,434.6" />
+									</g>
+								</g>
+							</svg>
+							Корзина пуста
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				
+				<svg class="header-topline__user-icon" height="47" width="48">
+					<use xlink:href="#icon-user" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<svg viewBox="0 0 15 14" id="icon-user">
+							<path d="M8 7C9.65685 7 11 5.65685 11 4C11 2.34315 9.65685 1 8 1C6.34315 1 5 2.34315 5 4C5 5.65685 6.34315 7 8 7Z"></path>
+							<path d="M8 8C4.68629 8 2 10.6863 2 14H14C14 10.6863 11.3137 8 8 8Z"></path>
+						</svg>
+					</use>
+				</svg>
+				
+				<p>Kodyua Yrmfkmkd njdnjdnf jdnf cvmxcv xcvxcv xc vx cv xcvxcvxcvxcv sdfsdf sd fsdfsdfsdfwe we rwe rwerwer werwer werwerwe wer</p><br/>
+				<p>Kodyua Yrmfkmkd njdnjdnf jdnf cvmxcv xcvxcv xc vx cv xcvxcvxcvxcv sdfsdf sd fsdfsdfsdfwe we rwe rwerwer werwer werwerwe wer</p><br/>
+				<p>Kodyua Yrmfkmkd njdnjdnf jdnf cvmxcv xcvxcv xc vx cv xcvxcvxcvxcv sdfsdf sd fsdfsdfsdfwe we rwe rwerwer werwer werwerwe wer</p><br/>
+				<p>Kodyua Yrmfkmkd njdnjdnf jdnf cvmxcv xcvxcv xc vx cv xcvxcvxcvxcv sdfsdf sd fsdfsdfsdfwe we rwe rwerwer werwer werwerwe wer</p><br/>
+				<p>Kodyua Yrmfkmkd njdnjdnf jdnf cvmxcv xcvxcv xc vx cv xcvxcvxcvxcv sdfsdf sd fsdfsdfsdfwe we rwe rwerwer werwer werwerwe wer</p><br/>
+				<p>Kodyua Yrmfkmkd njdnjdnf jdnf cvmxcv xcvxcv xc vx cv xcvxcvxcvxcv sdfsdf sd fsdfsdfsdfwe we rwe rwerwer werwer werwerwe wer</p><br/>
+				<p>Kodyua Yrmfkmkd njdnjdnf jdnf cvmxcv xcvxcv xc vx cv xcvxcvxcvxcv sdfsdf sd fsdfsdfsdfwe we rwe rwerwer werwer werwerwe wer</p><br/>
+				<p>Kodyua Yrmfkmkd njdnjdnf jdnf cvmxcv xcvxcv xc vx cv xcvxcvxcvxcv sdfsdf sd fsdfsdfsdfwe we rwe rwerwer werwer werwerwe wer</p><br/>
+				<p>Kodyua Yrmfkmkd njdnjdnf jdnf cvmxcv xcvxcv xc vx cv xcvxcvxcvxcv sdfsdf sd fsdfsdfsdfwe we rwe rwerwer werwer werwerwe wer</p><br/>
+				<p>Kodyua Yrmfkmkd njdnjdnf jdnf cvmxcv xcvxcv xc vx cv xcvxcvxcvxcv sdfsdf sd fsdfsdfsdfwe we rwe rwerwer werwer werwerwe wer</p><br/>
+				<p>Kodyua Yrmfkmkd njdnjdnf jdnf cvmxcv xcvxcv xc vx cv xcvxcvxcvxcv sdfsdf sd fsdfsdfsdfwe we rwe rwerwer werwer werwerwe wer</p><br/>
+				<p>Kodyua Yrmfkmkd njdnjdnf jdnf cvmxcv xcvxcv xc vx cv xcvxcvxcvxcv sdfsdf sd fsdfsdfsdfwe we rwe rwerwer werwer werwerwe wer</p><br/>
+				<p>Kodyua Yrmfkmkd njdnjdnf jdnf cvmxcv xcvxcv xc vx cv xcvxcvxcvxcv sdfsdf sd fsdfsdfsdfwe we rwe rwerwer werwer werwerwe wer</p><br/>
+				<p>Kodyua Yrmfkmkd njdnjdnf jdnf cvmxcv xcvxcv xc vx cv xcvxcvxcvxcv sdfsdf sd fsdfsdfsdfwe we rwe rwerwer werwer werwerwe wer</p><br/>
+				<p>Kodyua Yrmfkmkd njdnjdnf jdnf cvmxcv xcvxcv xc vx cv xcvxcvxcvxcv sdfsdf sd fsdfsdfsdfwe we rwe rwerwer werwer werwerwe wer</p><br/>
+				<p>Kodyua Yrmfkmkd njdnjdnf jdnf cvmxcv xcvxcv xc vx cv xcvxcvxcvxcv sdfsdf sd fsdfsdfsdfwe we rwe rwerwer werwer werwerwe wer</p><br/>
+				<p>Kodyua Yrmfkmkd njdnjdnf jdnf cvmxcv xcvxcv xc vx cv xcvxcvxcvxcv sdfsdf sd fsdfsdfsdfwe we rwe rwerwer werwer werwerwe wer</p><br/>
+				<p>Kodyua Yrmfkmkd njdnjdnf jdnf cvmxcv xcvxcv xc vx cv xcvxcvxcvxcv sdfsdf sd fsdfsdfsdfwe we rwe rwerwer werwer werwerwe wer</p><br/>
+				<p>Kodyua Yrmfkmkd njdnjdnf jdnf cvmxcv xcvxcv xc vx cv xcvxcvxcvxcv sdfsdf sd fsdfsdfsdfwe we rwe rwerwer werwer werwerwe wer</p><br/>
+				<p>Kodyua Yrmfkmkd njdnjdnf jdnf cvmxcv xcvxcv xc vx cv xcvxcvxcvxcv sdfsdf sd fsdfsdfsdfwe we rwe rwerwer werwer werwerwe wer</p><br/>
+				<p>Kodyua Yrmfkmkd njdnjdnf jdnf cvmxcv xcvxcv xc vx cv xcvxcvxcvxcv sdfsdf sd fsdfsdfsdfwe we rwe rwerwer werwer werwerwe wer</p><br/>
+				<p>Kodyua Yrmfkmkd njdnjdnf jdnf cvmxcv xcvxcv xc vx cv xcvxcvxcvxcv sdfsdf sd fsdfsdfsdfwe we rwe rwerwer werwer werwerwe wer</p><br/>
+				<p>Kodyua Yrmfkmkd njdnjdnf jdnf cvmxcv xcvxcv xc vx cv xcvxcvxcvxcv sdfsdf sd fsdfsdfsdfwe we rwe rwerwer werwer werwerwe wer</p><br/>
+				<p>Kodyua Yrmfkmkd njdnjdnf jdnf cvmxcv xcvxcv xc vx cv xcvxcvxcvxcv sdfsdf sd fsdfsdfsdfwe we rwe rwerwer werwer werwerwe wer</p><br/>
+				<p>Kodyua Yrmfkmkd njdnjdnf jdnf cvmxcv xcvxcv xc vx cv xcvxcvxcvxcv sdfsdf sd fsdfsdfsdfwe we rwe rwerwer werwer werwerwe wer</p><br/>
+				<p>Kodyua Yrmfkmkd njdnjdnf jdnf cvmxcv xcvxcv xc vx cv xcvxcvxcvxcv sdfsdf sd fsdfsdfsdfwe we rwe rwerwer werwer werwerwe wer</p><br/>
+				<p>Kodyua Yrmfkmkd njdnjdnf jdnf cvmxcv xcvxcv xc vx cv xcvxcvxcvxcv sdfsdf sd fsdfsdfsdfwe we rwe rwerwer werwer werwerwe wer</p><br/>
+				<p>Kodyua Yrmfkmkd njdnjdnf jdnf cvmxcv xcvxcv xc vx cv xcvxcvxcvxcv sdfsdf sd fsdfsdfsdfwe we rwe rwerwer werwer werwerwe wer</p><br/>
+				<p>Kodyua Yrmfkmkd njdnjdnf jdnf cvmxcv xcvxcv xc vx cv xcvxcvxcvxcv sdfsdf sd fsdfsdfsdfwe we rwe rwerwer werwer werwerwe wer</p><br/>
+				<p>Kodyua Yrmfkmkd njdnjdnf jdnf cvmxcv xcvxcv xc vx cv xcvxcvxcvxcv sdfsdf sd fsdfsdfsdfwe we rwe rwerwer werwer werwerwe wer</p><br/>
+			</div>
+			<div class="premium">
+				
+			</div>
+			<section class="section">
+				
+			</section>
+			<footer class="footer">
+				
+			</footer>
+		</div>
+	</div>
+</body>
+</html>
