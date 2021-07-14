@@ -1,0 +1,136 @@
+html,body {
+	height:100%;
+}
+
+.wrapper {
+    display: flex;
+    min-height: 100%;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.container{
+	max-width: 1200px;
+	margin: 0px auto;
+	padding: 0px 15px;
+}
+
+.header_logo {
+	margin-left: 10px;
+}
+.header_phone {
+	margin-right: 10px;
+}
+
+
+
+@media (max-width:1200px){
+	.container{
+		max-width: 970px;
+	}
+}
+@media (max-width:992px){
+	.container{
+		max-width: 750px;
+	}
+}
+@media (max-width:767px){
+	.container{
+		max-width: none;
+	}
+}
+@media (max-width:420px){
+	
+}
+
+.header {
+    background-color: blueviolet;
+}
+
+.header__row {
+	background-color: burlywood;
+	display: flex;
+	justify-content: space-between;
+	height: 80px;
+	align-items: center;
+}
+
+
+.page {
+	background-color: #6ebaba;
+    flex: 1 1 auto;
+    padding: 30px 0;
+}
+
+a, a:visited {
+	text-decoration:none;
+}
+.contacts {
+    padding: 0 30px;
+}
+
+	.contacts {
+		border-left: 1px solid #fff;
+	}
+	.contacts:first-child {
+		border: 0;
+	}
+
+
+@media (max-width: 1192px) {
+	.contacts__item_icon {
+		padding: 0 0 0 25px;
+		background-size: 15px;
+	}
+	.contacts-header__phone {
+		font-size: 16px;
+	}
+	.contacts-header__column {
+		padding: 0 10px;
+	}
+}
+
+
+.contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.contacts__item_icon {
+    background: url(../img/phone.png) left no-repeat;
+    padding: 0 0 0 37px;
+}
+.contacts__label {
+    font-size: 12px;
+    font-weight: 300;
+    color: #000;
+    margin: 0 0 5px 0;
+}
+.contacts__phone {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 900;
+    white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+	.contacts__item_icon {
+		background: 0 0;
+		padding: 0;
+	}
+	.contacts__label {
+		display: none;
+	}
+	.contacts__phone {
+		background: url(../img/phone.png) left no-repeat;
+		width: 19px;
+		height: 25px;
+		font-size: 0;
+		display: block;
+		margin: 0 10px 0 0;
+	}
+}
